@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio – Compositor & Video Editor</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+  <style>
+    html { scroll-behavior: smooth; } /* Smooth Scroll global */
+  </style>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+<!-- Hero Section -->
+<section class="relative h-screen flex flex-col justify-center items-center text-center bg-gradient-to-br from-blue-900 via-blue-700 to-blue-500 overflow-hidden">
+
+  <!-- Particles Background nur Hero -->
+  <div id="tsparticles" class="absolute inset-0 z-0 w-full h-full"></div>
+
+  <!-- Content -->
+  <h1 class="relative z-10 text-5xl md:text-7xl font-bold mb-4" data-aos="fade-up">Milan Schwörer</h1>
+  <p class="relative z-10 text-xl md:text-2xl mb-8" data-aos="fade-up" data-aos-delay="200">Compositor & Video Editor – Bringing Visual Stories to Life</p>
+  <a href="#portfolio" class="relative z-10 px-6 py-3 bg-white text-gray-900 font-semibold rounded-full hover:bg-gray-200 transition" data-aos="fade-up" data-aos-delay="400">View Showreels</a>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="py-20 px-6 md:px-20 bg-gray-800">
+  <h2 class="text-4xl font-bold mb-12 text-center" data-aos="fade-up">Showreels</h2>
+  <div class="grid md:grid-cols-2 gap-12">
+    <!-- Vimeo Video -->
+    <div class="group overflow-hidden rounded-lg shadow-lg" data-aos="zoom-in">
+      <div class="aspect-w-16 aspect-h-9">
+        <iframe src="https://player.vimeo.com/video/796350510" 
+                class="w-full h-full rounded-lg transform group-hover:scale-105 transition duration-500"
+                frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
+        </iframe>
+      </div>
+      <h3 class="mt-4 text-xl font-semibold">Compositing Reel</h3>
+      <p class="text-gray-400">Compositing for a visual story.</p>
+    </div>
+
+    <!-- Local Video -->
+    <div class="group overflow-hidden rounded-lg shadow-lg" data-aos="zoom-in" data-aos-delay="200">
+      <video class="w-full rounded-lg transform group-hover:scale-105 transition duration-500" controls>
+        <source src="showreel2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <h3 class="mt-4 text-xl font-semibold">Editor Reel</h3>
+      <p class="text-gray-400">Video Editing and Motion Graphics.</p>
+    </div>
+  </div>
+</section>
+<!-- Breakdown Shots Section -->
+<section id="breakdowns" class="py-20 px-6 md:px-20 bg-gray-900">
+  <h2 class="text-4xl font-bold mb-12 text-center" data-aos="fade-up">Breakdown Shots</h2>
+
+  <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+    <!-- Shot 1 -->
+    <div class="group relative overflow-hidden rounded-lg shadow-lg" data-aos="zoom-in">
+      <video class="w-full rounded-lg transform group-hover:scale-105 transition duration-500" autoplay muted loop playsinline>
+        <source src="greenscreen_beforeafter.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+        <p class="text-white font-semibold text-lg">Green Screen Keying & Sky Replacement</p>
+      </div>
+    </div>
+
+    <!-- Shot 2 -->
+    <div class="group relative overflow-hidden rounded-lg shadow-lg" data-aos="zoom-in" data-aos-delay="150">
+      <video class="w-full rounded-lg transform group-hover:scale-105 transition duration-500" autoplay muted loop playsinline>
+        <source src="cgi_integration.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+        <p class="text-white font-semibold text-lg">CGI Integration – Lighting & Reflection Match</p>
+      </div>
+    </div>
+
+    <!-- Shot 3 -->
+    <div class="group relative overflow-hidden rounded-lg shadow-lg" data-aos="zoom-in" data-aos-delay="300">
+      <video class="w-full rounded-lg transform group-hover:scale-105 transition duration-500" autoplay muted loop playsinline>
+        <source src="color_grading.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+        <p class="text-white font-semibold text-lg">Color Grading & Mood Development</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- About Section -->
+<section id="about" class="py-20 px-6 md:px-20 bg-gray-900">
+  <h2 class="text-4xl font-bold mb-8 text-center" data-aos="fade-up">About Me</h2>
+  <div class="max-w-4xl mx-auto text-center text-gray-300" data-aos="fade-up" data-aos-delay="200">
+    <p class="mb-4">I am a Compositor and Video Editor passionate about visual effects, motion graphics, and creative image composition. I tell stories through moving images and ensure that every project looks visually strong and professional.</p>
+    <p>Skills: Nuke, After Effects, Fusion, Davinci Resolve, Photoshop, Color Grading</p>
+  </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" class="py-20 px-6 md:px-20 bg-gray-800">
+  <h2 class="text-4xl font-bold mb-12 text-center" data-aos="fade-up">Experience</h2>
+  <div class="max-w-4xl mx-auto space-y-8">
+    <div class="bg-gray-900 p-6 rounded-lg shadow-lg" data-aos="fade-right">
+      <h3 class="text-2xl font-semibold">Compositing Intern – RecomFilm GmbH</h3>
+      <p class="text-gray-400">Assisted in compositing workflows, visual effects, and post-production for various projects.</p>
+      <span class="text-gray-500 text-sm">Dec 2023 – Feb 2024</span>
+    </div>
+<div class="bg-gray-900 p-6 rounded-lg shadow-lg" data-aos="fade-right">
+      		<h3 class="text-2xl font-semibold">Compositing Artist – Short Film Project 13</h3>
+      		<p class="text-gray-400">Various compositing tasks. For example, Muzzle flash, 2d integration and glow effects</p>
+      		<span class="text-gray-500 text-sm">Nov 2023 – Feb 2024</span>
+    <!-- Additional experience entries can be added here -->
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 px-6 md:px-20 bg-gray-900">
+  <h2 class="text-4xl font-bold mb-8 text-center" data-aos="fade-up">Contact</h2>
+  <div class="max-w-2xl mx-auto text-center" data-aos="fade-up" data-aos-delay="200">
+    <p class="mb-6 text-gray-400">Send me a message or follow me on social media:</p>
+    <div class="flex justify-center gap-6 mb-8">
+      <a href="https://www.linkedin.com/in/milan-schwoerer/" target="_blank" rel="noopener noreferrer" class="text-white text-2xl hover:text-purple-400 transition"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/yourprofile" target="_blank" rel="noopener noreferrer" class="text-white text-2xl hover:text-pink-400 transition"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.artstation.com/yourprofile" target="_blank" rel="noopener noreferrer" class="text-white text-2xl hover:text-blue-400 transition"><i class="fab fa-artstation"></i></a>
+    </div>
+    <a href="mailto:milan.schwoerer@icloud.com" class="px-6 py-3 bg-purple-600 rounded-full hover:bg-purple-500 transition">Send Email</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-6 text-center text-gray-500 bg-gray-900">
+  &copy; 2025 Your Name. All rights reserved.
+</footer>
+
+<!-- Scripts -->
+<script>
+  // Initialize tsParticles only in Hero
+  tsParticles.load("tsparticles", {
+    fullScreen: { enable: false }, // <-- wichtig!    
+    background: { color: { value: "transparent" } },
+    fpsLimit: 60,
+    interactivity: {
+      events: { onHover: { enable: true, mode: "repulse" }, resize: true },
+      modes: { repulse: { distance: 100, duration: 0.4 } }
+    },
+    particles: {
+      color: { value: "#ffffff" },
+      links: { color: "#ffffff", distance: 150, enable: true, opacity: 0.2, width: 1 },
+      collisions: { enable: false },
+      move: { directions: "none", enable: true, outModes: "bounce", random: true, speed: 1, straight: false },
+      number: { value: 60 },
+      opacity: { value: 0.3 },
+      shape: { type: "circle" },
+      size: { value: { min: 1, max: 4 } }
+    },
+    detectRetina: true
+  });
+
+  // Initialize AOS animations
+  AOS.init({ duration: 800, once: true });
+</script>
+
+</body>
+</html>
+
+
+    	</div>
